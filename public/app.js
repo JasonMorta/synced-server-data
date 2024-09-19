@@ -1,6 +1,7 @@
 // app.js
 
 // const { deepEqual } = require("./deepCompare");
+import {isEqual} from 'lodash';
 
 
 /**

@@ -1,9 +1,15 @@
 // server.js
 
-const express = require('express');
-const axios = require('axios');
-const cors = require('cors');
-const path = require('path'); // For handling file paths
+import express from 'express';
+import axios from 'axios';
+import cors from 'cors';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+// Define __dirname for ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const app = express();
 
